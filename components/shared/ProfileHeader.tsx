@@ -6,7 +6,8 @@ interface Props {
     username: string,
     name: string,
     imgUrl: string,
-    bio: string
+    bio: string,
+    type?: 'User' | 'Community';
 }
 
 const ProfileHeader = ({
@@ -15,7 +16,8 @@ const ProfileHeader = ({
     name,
     username,
     imgUrl,
-    bio
+    bio,
+    type
 }: Props) => {
     return (
         <div className="fle w-full flex-col justify-start">
